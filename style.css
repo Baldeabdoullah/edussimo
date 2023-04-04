@@ -1,0 +1,1056 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+* {
+  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+}
+
+html,
+body {
+    position: relative;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    overflow-x: hidden;  
+}
+
+header {
+    width: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    margin:0 auto 30px;
+    position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        box-shadow: 10px 10px 10px #bdc3c7;
+   
+}
+.nav {
+     width: 100%;
+     display: flex;
+     align-items: center;
+    justify-content: space-between;
+    margin: 0 auto; 
+
+   
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.titre-logo {
+    display: flex;
+    align-items: center;
+}
+
+.titre-logo i {
+    margin: 0 3px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+   width: 40%;
+    margin: 0 auto;
+    background: #fff;
+}
+
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-toggle i {
+    color: #130f40;
+}
+li {
+    list-style-type: none;
+    
+}
+ a {
+    text-decoration: none;
+    color: #130f40;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+ }
+
+ i {
+    color: orange;
+ }
+
+  h1 {
+      /* color: #30336b; */
+
+      color: #130f40;
+      font-family: 'Poppins', sans-serif;
+      font-size: 2.5rem;
+  }
+
+  h2 {
+      color: #4834d4;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.8rem;
+  }
+
+  h3 {}
+
+  p {
+    color: #333;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1rem;
+
+  }
+ button {
+    
+    background-color: #ff9f1a;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: 1px solid #e67e22 ;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+ }
+
+ button a {
+  color: #fff;
+ }
+
+ button:hover {
+    background-color: #130f40;
+
+ }
+
+ /* POUR L'ENTETE */
+
+ #ENTETE {
+
+    margin-top: 100px;
+    /* width: 100%; */
+    width: 100vw;
+
+    padding: 15px 15px;
+    background-color: #fff;
+    /* background: wheat; */
+ }
+
+ .accueil {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: stretch ;
+ }
+ .accueil-text {
+    padding: 10px 10px;
+ }
+
+ .text-accueil {
+    margin: 0 auto;
+    width: 100%;
+ }
+
+ .text-accueil h2 {
+    margin:10px auto ;
+ }
+
+ .text-accueil h1 {
+    margin: 15px auto;
+ }
+
+ .text-accueil p {
+    margin-top: 10px ;
+    margin-bottom: 10px;
+    text-align: justify;
+    max-width: 500px;
+
+ }
+
+ .accueil-boutton {
+    margin: 20px auto;
+ }
+
+ .accueil-images {
+    text-align: center;
+    position: relative;
+ }
+
+ .accueil-images .img {
+    height: 100%;
+    width: 100%;
+ }
+
+  .accueil-images .img img {
+   
+    /* margin-left: auto;
+    margin-right: auto; */
+   
+  }
+
+  .accueil-btn {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+
+  .flotant {
+    background: #44bd32;
+    display: flex;
+    padding: 10px 10px;
+    border-radius: 10px;
+    align-items: center;
+    animation-name: flotant;
+   animation:  flotant 2.5s ease-in-out infinite;
+   box-shadow: 10px 20px 60px #000;
+   margin: 0 10px;
+   min-width: 210px;
+  
+  }
+  .flotant h3 {
+    font-size: 0.8rem;
+    color: #130f40;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  @keyframes flotant { 
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+    
+  }
+
+  .flotant i {
+    color: #130f40;
+    margin: 0 4px;
+  }
+
+  /* COURS POPULAIRES */
+
+  #POPULAIRE {
+    padding: 10px 10px;
+    background: url(./image/universite/edussimo3.jpg) center/cover fixed;
+    min-height: 70vh;
+   
+  }
+
+  .populaire-contenu {
+
+  }
+
+  .populaire-contenu h1 {
+    text-align: center;
+    margin: 10px auto;
+    font-size: 2rem;
+    color: #fff;
+  }
+
+  .populaire-cours {
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    margin: 0 auto;
+    width: 90%;
+   row-gap: 40px;
+   column-gap: 10px;
+  }
+
+  .populaire-item {
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    padding: 15px 5px;
+    border: 1px solid orange;
+    border-radius: 10px;
+    transition: 0.5s;
+    background: #fff;
+  }
+
+  .populaire-item:hover {
+    background: orange;
+   
+  }
+
+  .populaire-item:hover i {
+    color: #fff;
+  }
+
+ .populaire-item:hover h3 {
+    color: #fff;
+ }
+
+  .populaire-item i {
+    text-align: left;
+
+  }
+
+  .populaire-item h3 {
+    margin: 0 10px;
+    color: #130f40;
+    font-family: 'Poppins', sans-serif;
+  
+  }
+
+  /* INFOS */
+
+  #INFOS {
+
+margin: 20px auto;
+  }
+
+  .infos-contenu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .infos-text {
+    padding: 9px 15px;
+
+  }
+
+  .infos-text h2 {
+    font-size: 1.4rem;
+  }
+
+  .infos-text h1 {
+    font-size: 1.5rem;
+    margin: 10px auto;
+  }
+
+  .infos-text p {
+    text-align: justify;
+  }
+
+  .infos-list {
+    margin: 10px auto;
+    padding-left: 10px;
+  }
+
+  .infos-list li {
+    color: #130f40;
+    font-family: 'Poppins', sans-serif;
+    list-style-type: circle;
+    margin: 10px auto;
+
+  }
+
+  /* LES COURS */
+
+ #COURS {
+    text-align: center;
+    background: #ecf0f1;
+    width: 100%;
+    padding: 10px 10px;
+
+  }
+
+  #COURS h2 {
+    margin: 30px auto;
+  
+   
+  }
+
+ 
+
+  .cour-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+    margin: 0 auto;
+    gap: 20px;
+  }
+
+  .cour-text {
+    background: #fff;
+    max-width: 340px;
+    top: 0;
+    border-radius: 0 0 10px 10px;
+   
+   
+  }
+
+  .cour-text h3 {
+    color: #4834d4;
+    /* color: coral; */
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.1rem;
+       padding-top: 5px;
+       padding-bottom: 5px;
+
+  }
+
+  .cour-detail {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .cour-detail p {
+    color: orange;
+
+  }
+
+  .ligne {
+   height: 1px;
+   max-width: 250px;
+   background-color: #e67e22;
+   text-align: center;
+   margin: 10px auto;
+   display: block;
+      
+  }
+
+  .vue {
+    display: flex;
+  }
+
+  .vue span {
+    margin-right: 5px;
+  }
+
+ 
+
+  .cour-item {
+
+    /* box-shadow: 10px 20px 30px #bdc3c7; */
+    box-shadow: 10px 20px 30px #333;
+    animation: cour 0.8s ease-in ;
+  }
+
+  @keyframes cour {
+
+    from {
+      transform: translateY(20px);
+    }
+
+    to {
+      transform: translateY(0);
+    }
+    
+  }
+
+
+  .cour-image {
+
+    max-width: 340px;
+    max-height: 300px;
+    overflow: hidden;
+  }
+
+  .cour-image img {
+
+    width: 100%;
+    height: 100%;
+    border-radius:  10px 10px 0 0 ;
+    transition: 0.5s;
+  }
+
+ .cour-image img:hover {
+    transform: scale(1.1);
+ }
+
+
+ /* EVENEMENT */
+ #EVENT {
+
+  background: #ecf0f1;
+  padding: 50px 10px;
+ 
+
+ }
+
+ .event-contenu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+  
+ }
+
+ .event-image {
+  text-align: center;
+  max-width: 500px;
+  max-height: 500px;
+  margin: 0 auto;
+
+ }
+
+ .event-image img {
+  border-radius: 10px 10px 10px  10px;
+  height: 100%;
+  width: 100%;
+ }
+
+ .event-text {
+
+ }
+
+
+ .event-text h2 {
+  text-align: center;
+
+ }
+
+ .event-item {
+  background: #fff;
+  padding: 10px 10px;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 500px;
+  border-radius: 5px;
+  /* box-shadow: 10px 20px 40px #bdc3c7; */
+  box-shadow: 10px 20px 40px #333;
+  transition: 0.2s ;
+
+ }
+
+ .event-item i {
+  margin-right: 5px;
+ }
+
+ .event-item:hover {
+ border-right: 4px solid coral;
+ }
+
+ .event-date {
+  color: #130f40;
+    font-family: 'Poppins', sans-serif;
+ 
+
+ }
+
+ .ligne2 {
+  width: 1px;
+  height: 30px;
+  background-color: #333;
+  display: block;
+
+ }
+
+ .event-detail {
+
+ 
+  
+
+ }
+
+ .event-detail h3 {
+  color: #130f40;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    max-width: 297px;
+
+ }
+
+ .event-detail p {
+  font-size: 0.8rem;
+
+
+ }
+
+
+ /* LE FOOTER */
+
+ #FOOTER {
+  background: #130f40;
+  min-height: 30vh;
+  color: #fff;
+  width: 100%;
+ }
+
+ 
+
+ .footer-contenu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px 10px;
+ }
+
+ .footer-infos {
+
+ }
+ .footer-infos h4 {
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+ }
+
+ .footer-infos p {
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+ }
+ .footer-reseau {
+  margin: 10px auto;
+ }
+
+ .footer-reseau i {
+  margin: 0 4px;
+  padding: 5px 5px;
+  border: 1px solid  #fff;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.6s;
+ }
+
+    .footer-reseau i:hover {
+      background: orange;
+    }
+
+ .footer-liens {
+
+ }
+ .footer-liens ul  {
+
+ }
+
+ .footer-liens ul li {
+  margin: 5px auto;
+ }
+
+    .footer-liens ul li a {
+      color: #fff;
+      font-weight: 300;
+    }
+
+   .footer-liens li {
+    transition: 0.5s;
+   }
+
+   .footer-liens li:hover {
+    transform: translateX(5px);
+   }
+
+    .footer-inscription {
+      
+    }
+    .inscription-envoi {
+      display: flex;
+      align-items: center;
+    }
+
+    .footer-inscription h4 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 300;
+        }
+
+    .footer-inscription input {
+      padding: 10px 10px ;
+      border-radius: 5px 0 0 5px;
+
+    }
+
+.footer-inscription i {
+  color: #fff;
+  padding: 10px 10px ;
+  background: orange;
+  cursor: pointer;
+  border-radius: 0 3px 3px 0;
+
+}
+
+.copyright {
+ width: 100%;
+ background: #192a56;
+ margin-top: 10px;
+}
+
+.copyright p {
+text-align: center;
+  color: #fff;
+}
+
+
+/* LA PAGE COURS */
+
+.cour2 {
+  margin-top: 50px ;
+  margin-bottom: 50px;
+
+}
+
+.cours-select {
+  margin: 20px auto;
+}
+
+
+/* LA PAGE INFOS */
+#EDUSSIMO {
+  margin-top: 100px;
+}
+.edu-titre {
+  text-align: center;
+}
+
+.edu-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: stretch;
+
+}
+.edu-text {
+background: #130f40;
+padding: 20px 20px;
+}
+
+.edu-text p {
+  color: #fff;
+  line-height: 1.7rem;
+}
+
+.edu-image {
+
+
+}
+
+.edu-image img {
+  width: 100%;
+  height: 100%;
+}
+
+/* LES QUESTIONS */
+
+#FAQ {
+  background: aqua;
+  margin-top: 20px;
+}
+
+.faq-titre {
+  text-align: center;
+
+}
+
+.lesquestion {
+  padding: 10px 10px;
+
+}
+
+.article {
+  background: #fff;
+  max-width: 700px;
+  margin: 10px auto;
+  border-radius: 10px;
+  box-shadow: 10px 20px 40px #333;
+}
+.question {
+  display: flex;
+  align-items: center;
+  padding: 10px 10px;
+
+}
+
+.question i {
+  cursor: pointer;
+  margin: 0 5px;
+
+}
+
+.question h3 {
+   color: #130f40;
+  font-family: 'Poppins', sans-serif;
+}
+
+.reponse {
+  padding: 5px 10px;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.reponse p {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.reponse.active {
+  height: 90px;
+  /* height: auto; */
+}
+
+.reponse1 {
+  transition: 0.5s;
+}
+
+.reponse1.active {
+  height: 90px;
+  /* height: auto; */
+}
+
+.reponse2 {
+  transition: 0.5s;
+}
+
+.reponse2.active {
+  height: 90px;
+  /* height: auto; */
+}
+
+
+
+/* CONTACTE */
+
+#CONTACT {
+  margin-top: 50px;
+  background: url(./image/universite/edussimo.jpg) center/cover fixed;
+  position: relative;
+  height: 100vh;
+}
+
+.contact-titre {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contact-titre h1 {
+  color: #fff;
+
+}
+
+
+/* RESPONSIVE */
+  @media (max-width: 1100px) {
+      h1 {
+          font-size: 2rem;
+      }
+
+      h2 {
+          font-size: 1rem;
+      }
+
+      /* COURS */
+
+      .cour-container {
+        width: 90%;
+      }
+
+      /* LA PAGE INFOS */
+
+      .edu-container {
+        grid-template-columns: 1fr;
+      }
+
+  }
+
+ @media  (max-width: 900px) {
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    .nav-container {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        text-align: center;
+        width: 100%;
+       
+    }
+    .menu.block {
+      display: block;
+      animation: block 0.8s ease-in;
+    }
+    @keyframes block {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+      
+    }
+    .menu li {
+        margin: 10px auto;
+    }
+
+    .menu-toggle {
+        display: block;
+        padding: 10px 10px;
+    }
+
+    .nav {
+        align-items: flex-start;   
+ }
+     /* ENTETE */
+ .accueil {
+    grid-template-columns: 1fr;
+    justify-content: center;
+ }
+
+ .accueil-text {
+    text-align: center;
+ }
+ .text-accueil {
+   
+    
+    /* padding: 10px 10px; */
+ }
+ .text-accueil h2 {
+
+ }
+ .text-accueil p {
+  /* text-align: center; */
+    margin: 10px auto;
+   width: auto;
+ }
+
+ .accueil-btn {
+    display: block;
+    text-align: center;
+ }
+
+ .flotant {
+    max-width: 300px;
+    margin: 10px auto;
+ }
+
+ .populaire-contenu h1 {
+    font-size: 1.8rem;
+
+ }
+
+ .populaire-cours {
+    grid-template-columns: 1fr 1fr;
+
+ }
+
+ /* INFOS */
+
+  .infos-contenu  {
+
+    grid-template-columns: 1fr;
+    justify-content: center;
+    padding: 10px 10px;
+  
+  
+
+  }
+  .infos-image {
+    width: 80%;
+    margin: 0 auto;
+
+  }
+
+  .infos-text {
+    width: 80%;
+        margin: 0 auto;
+      
+
+  }
+
+  /* LES COURS */
+
+  .cour-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+  .cour-item {
+    text-align: center;
+  }
+  .cour-text {
+   margin: 0 auto;
+
+  }
+  .cour-image {
+    margin: 0 auto;
+   
+  }
+
+  /* EVENEMENT */
+    .event-contenu {
+      
+      grid-template-columns: 1fr;
+      justify-content: center;
+  
+    }
+
+   /* FOOTER */
+     .footer-contenu {
+      grid-template-columns: 1fr;
+      justify-content: flex-start;
+     }
+
+     .footer-infos {
+      margin-bottom: 20px;
+
+
+     }
+
+     .footer-liens {
+      margin-bottom: 20px;
+    
+
+     }
+
+     .footer-inscription {
+   
+
+     }
+
+}
+
+
+@media (max-width: 770px) {
+
+    .cour-container {
+        justify-content: center;
+        width: 100%;
+         grid-template-columns: 1fr ;
+        }
+
+}
+
+ @media (max-width: 700px) {
+    .populaire-cours {
+        justify-content: center;
+        grid-template-columns: 1fr;
+    }
+
+    .populaire-item {
+        max-width: 300px;
+        min-width: 300px;
+        margin: 0 auto;
+    }
+
+    /* ENTETE */
+    .text-accueil p {
+        letter-spacing: normal;
+    }
+
+ }
+    
